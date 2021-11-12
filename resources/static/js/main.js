@@ -1,5 +1,24 @@
 'use strict';
 
+// main page animation effect
+// const first_page = document.querySelector('.first__page');
+// const main_pc = document.querySelector('.main_pc');
+// const enter_exhibition = document.querySelector('.open-btn');
+
+// enter_exhibition.addEventListener('click', () => {
+//   first_page.style.WebkitAnimation = "fadeOut 1s";
+//   first_page.style.Animation = "fadeOut 1s";
+//   setTimeout(() => {
+//     main_pc.style.WebkitAnimation = "fadeIn 1s";
+//     main_pc.style.Animation = "fadeIn 1s";
+//     setTimeout(() => {
+//       first_page.style.display = "none";
+//       main_pc.style.display = "block";
+//     }, 450);
+//   }, 450);
+// });
+
+
 // Projects
 const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
