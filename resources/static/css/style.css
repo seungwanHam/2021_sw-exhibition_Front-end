@@ -419,3 +419,23 @@ p {
 .member:hover span {
   color: yellow;
 }
+
+/* project_description */
+
+#project__desc {
+  padding: 100px;
+}
+
+.project__desc__container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.project__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__detail {
+  text-align: center;
+}
