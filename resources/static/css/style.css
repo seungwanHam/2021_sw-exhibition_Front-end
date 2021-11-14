@@ -39,7 +39,7 @@
 }
 
 body {
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
   font-family: "Open Sans", sans-serif;
   margin: 0;
   cursor: default;
@@ -167,7 +167,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: blue;
+  background-color: lightslategrey;
   padding: 8px;
 }
 
@@ -220,6 +220,7 @@ p {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  width: calc(25%);
 }
 .main_pc .main_menu li .bgimg {
   position: absolute;
@@ -438,4 +439,84 @@ p {
 
 .project__detail {
   text-align: center;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .section {
+    padding-top: 70px;
+  }
+
+  /* Navbar */
+  .navbar__toggle-btn {
+    display: block;
+    top: 26px;
+    right: 26px;
+    background: var(--color-white);
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: lightslategrey;
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
+
+  .navbar__logo {
+    padding: 0px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
+  /* index.html */
+  .first__page {
+    text-align: center;
+  }
+
+  .link-btn {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .open-btn {
+    padding: 3px;
+  }
+
+  /* team.html */
+  .main_pc .main_menu li {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    height: calc(25%);
+  }
+
+  /* project.html */
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
 }
