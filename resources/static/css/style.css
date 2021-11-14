@@ -519,4 +519,9 @@ p {
     margin: 4px 0;
     width: 100%;
   }
+
+  /* project_description */
+  #project__desc {
+    padding: 70px 30px 30px 30px;
+  }
 }
