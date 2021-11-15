@@ -1,23 +1,5 @@
 'use strict';
 
-// main page animation effect
-// const first_page = document.querySelector('.first__page');
-// const main_pc = document.querySelector('.main_pc');
-// const enter_exhibition = document.querySelector('.open-btn');
-
-// enter_exhibition.addEventListener('click', () => {
-//   first_page.style.WebkitAnimation = "fadeOut 1s";
-//   first_page.style.Animation = "fadeOut 1s";
-//   setTimeout(() => {
-//     main_pc.style.WebkitAnimation = "fadeIn 1s";
-//     main_pc.style.Animation = "fadeIn 1s";
-//     setTimeout(() => {
-//       first_page.style.display = "none";
-//       main_pc.style.display = "block";
-//     }, 450);
-//   }, 450);
-// });
-
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -78,21 +60,3 @@ workBtnContainer.addEventListener('click', (event) => {
     projectContainer.classList.remove('anim-out');
   }, 300);
 });
-
-// function openPopup() {
-//   var _width = '650';
-//   var _height = '380';
-
-//   // 팝업을 가운데 위치시키기 위해 아래와 같이 값 구하기
-//   var _left = Math.ceil(( window.screen.width - _width )/2);
-//   var _top = Math.ceil(( window.screen.height - _height )/2); 
-
-//   window.open('/url', 'popup-test', 'width='+ _width +', height='+ _height +', left=' + _left + ', top='+ _top )
-// };
-
-// const content = document.querySelector('.contents');
-// const popup = document.querySelector('.popup');
-
-// content.addEventListener(('click'), () => {
-//   popup.fadeIn();
-// });

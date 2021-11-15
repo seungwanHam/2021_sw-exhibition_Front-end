@@ -157,8 +157,8 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
-  /* background-color: var(--color-pink); */
+  /* background-color: transparent; */
+  background-color: lightgray;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -261,6 +261,10 @@ p {
 }
 
 /* project.html */
+#work {
+  padding-top: 130px;
+}
+
 .work__categories {
   margin: 40px;
 }
@@ -370,6 +374,10 @@ p {
 }
 
 /* member.html */
+#team {
+  padding-top: 130px;
+}
+
 .team__description {
   border: 2px solid black;
   padding: 20px;
@@ -424,7 +432,7 @@ p {
 /* project_description */
 
 #project__desc {
-  padding: 100px;
+  padding-top: 130px;
 }
 
 .project__desc__container {
