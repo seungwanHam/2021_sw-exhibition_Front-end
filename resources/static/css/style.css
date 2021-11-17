@@ -320,6 +320,7 @@ p {
 .project {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 280px;
@@ -336,6 +337,10 @@ p {
   max-width: 100%;
   max-height: 100%;
 }
+
+/* .project__title {
+  
+} */
 
 .project__description {
   position: absolute;
