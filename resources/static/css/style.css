@@ -94,6 +94,10 @@ p {
   margin: 4px 0;
 }
 
+textarea {
+  resize: none;
+}
+
 /* Section common */
 .section {
   padding: 50px;
@@ -460,11 +464,13 @@ p {
 }
 
 /* guestbook */
+
 /* .guestbook {
   max-width: 1200px;
 } */
 .guest {
-  width: 400px;
+  width: 40%;
+  /* opacity: 0.2; */
   margin-top: 130px;
   margin-left: auto;
   margin-right: auto;
@@ -496,7 +502,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 250px;
   background: rgba(237, 193, 211);
   background: linear-gradient(
     166deg,
@@ -512,9 +518,10 @@ p {
   height: 32px;
   border: none;
   outline: none;
-  font-size: 24px;
+  font-size: 18px;
   padding: 16px;
   margin: 10px;
+  text-align: center;
 }
 
 #content {
@@ -534,31 +541,42 @@ p {
   font-size: var(--font-small);
   width: 20%;
   height: 32px;
-  border: none;
   outline: none;
-  font-size: 24px;
   padding: 0 16px;
   margin-top: 10px;
+  color: black;
+  z-index: 10;
 }
 
 .text-wrapper {
-  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+  width: 85%;
   margin: 30px auto;
 }
 
 .text {
   position: relative;
   display: flex;
-  float: left;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
   width: 250px;
   height: 200px;
-  margin-top: 40;
-  margin: 20px;
+  padding: 10px;
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
   background-color: var(--color-light-white);
   border-radius: var(--size-border-radius);
+  -webkit-box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
+  -moz-box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
+  box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
 }
+
+/* ------------------------------------------------------------------- */
 
 /* 갤럭시 탭, 아이패드등 (태블릿) */
 
@@ -608,8 +626,8 @@ p {
 
   .link-btn {
     padding: 30px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
   }
 
   .open-btn {
@@ -636,7 +654,14 @@ p {
   #project__desc {
     padding: 70px 30px 30px 30px;
   }
+
+  /* guestbook */
+
 }
+
+/* ------------------------------------------------------------------- */
+
+
 /* 안드로이드, 아이폰 (일반폰) */
 @media all and (max-width: 800px) {
   :root {
@@ -720,5 +745,10 @@ p {
   /* project_description */
   #project__desc {
     padding: 70px 30px 30px 30px;
+  }
+
+  /* guestbook */
+  .guest {
+    width: 90%;
   }
 }

@@ -12,7 +12,8 @@
     });
   </script> -->
   <link rel="stylesheet" href="../static/css/style.css">
-</head>
+  <script defer src="../static/js/main.js"></script>
+  <script defer src="../static/js/guestbook.js"></script>
 
 <body>
 
@@ -49,36 +50,25 @@
       <div class="guestbook__title">Geust book</div>
 
       <div class="input">
-        <p>작성자</p>
-        <input type="textarea" id="writer" />
-        <p>내용</p>
+        <input placeholder="이름" type="textarea" id="writer" />
         <textarea placeholder="축하 또는 응원 메시지를 남겨주세요! 근거없는 비방 글, 욕설, 상업적인 게시글은 통보없이 삭제될 수 있습니다." id="content"></textarea>
-        <input type="button" onclick="addGuestbook()" value="등록" class="input-btn" />
+        <button type="button" class="input-btn"><span>등록</span></button>
       </div>
 
       <div id="guestbookList"></div>
     </section>
 
     <div class="text-wrapper">
+      <!-- <div class="text">댓글</div>
       <div class="text">댓글</div>
       <div class="text">댓글</div>
       <div class="text">댓글</div>
       <div class="text">댓글</div>
       <div class="text">댓글</div>
       <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-      <div class="text">댓글</div>
-
-      <div class="text">댓글</div>
+      <div class="text">댓글</div> -->
     </div>
+    
   </div>
 
 </body>
