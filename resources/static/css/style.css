@@ -43,6 +43,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   cursor: default;
+  background-color: #ced3df;
 }
 
 a {
@@ -165,8 +166,8 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* background-color: transparent; */
-  background-color: lightgray;
+  background-color: transparent;
+  /* background-color: lightgray; */
   align-items: center;
   color: var(--color-white);
   padding-right: 30px;
@@ -208,7 +209,6 @@ textarea {
   top: 24px;
   right: 32px;
   font-size: 24px;
-  color: var(--color-white);
   display: none;
 }
 
@@ -466,7 +466,7 @@ textarea {
 /* guestbook */
 
 /* .guestbook {
-  max-width: 1200px;
+  background-color: #ced3df;
 } */
 .guest {
   width: 40%;
@@ -537,15 +537,16 @@ textarea {
 }
 
 .input-btn {
-  border-radius: var(--size-border-radius);
-  font-size: var(--font-small);
-  width: 20%;
-  height: 32px;
-  outline: none;
-  padding: 0 16px;
-  margin-top: 10px;
-  color: black;
-  z-index: 10;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  transition: transform 300ms ease-in;
+}
+.input-btn:hover {
+  transform: scale(1.1);
 }
 
 .text-wrapper {
@@ -576,6 +577,27 @@ textarea {
   box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
 }
 
+/* Arrow up */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  color: var(--color-white);
+  background-color: var(--color-grey);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* ------------------------------------------------------------------- */
 
 /* 갤럭시 탭, 아이패드등 (태블릿) */
@@ -588,15 +610,16 @@ textarea {
   /* Navbar */
   .navbar__toggle-btn {
     display: block;
-    top: 26px;
+    top: 22px;
     right: 26px;
-    background: var(--color-white);
+    font-size: 30px;
+    color: white;
   }
 
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: lightgrey;
+    background-color: #ced3df;
   }
 
   #navbar.navbar--dark {
@@ -655,6 +678,11 @@ textarea {
     padding: 70px 30px 30px 30px;
   }
 
+  .project__info {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* guestbook */
 
 }
@@ -680,15 +708,16 @@ textarea {
   /* Navbar */
   .navbar__toggle-btn {
     display: block;
-    top: 26px;
+    top: 15px;
     right: 26px;
-    background: var(--color-white);
+    font-size: 25px;
+    color: white;
   }
 
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: lightgrey;
+    background-color: #ced3df;
   }
 
   #navbar.navbar--dark {
@@ -745,6 +774,11 @@ textarea {
   /* project_description */
   #project__desc {
     padding: 70px 30px 30px 30px;
+  }
+
+  .project__info {
+    display: flex;
+    flex-direction: column;
   }
 
   /* guestbook */

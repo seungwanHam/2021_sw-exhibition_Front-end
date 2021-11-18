@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>분야 별 작품 페이지</title>
     <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
     <script defer src="../static/js/main.js"></script>
 </head>
 
@@ -14,13 +15,18 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
             <a href="./index.html">Caerang SW 전시회</a>
         </div>
         <ul class="navbar__menu">
-            <a href="./team.html"><li class="navbar__menu__item active">Team</li></a>
-            <a href="./project.html"><li class="navbar__menu__item">Projects</li></a>
-            <a href="./guestbook.html"><li class="navbar__menu__item">Guestbook</li></a>
+            <a href="./team.html">
+                <li class="navbar__menu__item active">Team</li>
+            </a>
+            <a href="./project.html">
+                <li class="navbar__menu__item">Projects</li>
+            </a>
+            <a href="./guestbook.html">
+                <li class="navbar__menu__item">Guestbook</li>
+            </a>
         </ul>
 
         <!-- Toggle button -->
@@ -35,16 +41,20 @@
             <h3>Projects</h3>
             <div class="work__categories">
                 <button class="category__btn selected" data-filter="*">
-                    ALL <!-- <span class="category__count">10</span> -->
+                    ALL
+                    <!-- <span class="category__count">10</span> -->
                 </button>
                 <button class="category__btn" data-filter="Web">
-                    Web<!-- <span class="category__count">5</span> -->
+                    Web
+                    <!-- <span class="category__count">5</span> -->
                 </button>
                 <button class="category__btn" data-filter="Game">
-                    Game<!-- <span class="category__count">3</span> -->
+                    Game
+                    <!-- <span class="category__count">3</span> -->
                 </button>
                 <button class="category__btn" data-filter="Application">
-                    Application<!-- <span class="category__count">2</span> -->
+                    Application
+                    <!-- <span class="category__count">2</span> -->
                 </button>
             </div>
 
@@ -154,6 +164,44 @@
         </div>
 
     </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
 </body>
+
+<script>
+    // Projects
+    const workBtnContainer = document.querySelector('.work__categories');
+    const projectContainer = document.querySelector('.work__projects');
+    const projects = document.querySelectorAll('.project');
+    workBtnContainer.addEventListener('click', (event) => {
+        const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
+        if (filter == null) {
+            return;
+        }
+        // Remove selection from the previous item and select the new one
+        const active = document.querySelector('.category__btn.selected');
+        active.classList.remove('selected');
+        const target =
+            event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+        target.classList.add('selected');
+
+        projectContainer.classList.add('anim-out');
+        setTimeout(() => {
+            projects.forEach((project) => {
+                console.log(project.dataset.type);
+                if (filter === '*' || filter === project.dataset.type) {
+                    project.classList.remove('invisible');
+                } else {
+                    project.classList.add('invisible');
+                }
+            });
+            projectContainer.classList.remove('anim-out');
+        }, 300);
+    });
+</script>
 
 </html>

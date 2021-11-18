@@ -4,16 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Guestbook</title>
-  <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="../static/js/guestbook.js"></script>
-  <script>
-    $(document).ready(function () {
-       guestbookList(); // 페이지 처음 진입했을 때, 방명록 리스트 불러오기
-    });
-  </script> -->
   <link rel="stylesheet" href="../static/css/style.css">
-  <script defer src="../static/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
   <script defer src="../static/js/guestbook.js"></script>
+  <script defer src="../static/js/main.js"></script>
 
 <body>
 
@@ -22,7 +16,6 @@
     <div id="wrap">
       <nav id="navbar">
         <div class="navbar__logo">
-          <i class="fab fa-diaspora"></i>
           <a href="./index.html">Caerang SW 전시회</a>
         </div>
         <ul class="navbar__menu">
@@ -43,8 +36,6 @@
         </button>
       </nav>
     </div>
-
-
     <section class="guest">
 
       <div class="guestbook__title">Geust book</div>
@@ -52,10 +43,10 @@
       <div class="input">
         <input placeholder="이름" type="textarea" id="writer" />
         <textarea placeholder="축하 또는 응원 메시지를 남겨주세요! 근거없는 비방 글, 욕설, 상업적인 게시글은 통보없이 삭제될 수 있습니다." id="content"></textarea>
-        <button type="button" class="input-btn"><span>등록</span></button>
+        <button type="button" class="input-btn">
+          <i class="fas fa-plus"></i>
+        </button>
       </div>
-
-      <div id="guestbookList"></div>
     </section>
 
     <div class="text-wrapper">
@@ -68,8 +59,13 @@
       <div class="text">댓글</div>
       <div class="text">댓글</div> -->
     </div>
-    
+
   </div>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
 </body>
 
