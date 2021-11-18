@@ -475,9 +475,9 @@ li {
   background-position: center;
 }
 
-.member:hover span {
+/* .member:hover span {
   color: yellow;
-}
+} */
 
 /* project_description */
 
@@ -496,7 +496,8 @@ li {
 }
 
 .project__detail {
-  text-align: center;
+  /* text-align: center; */
+  margin-top: 40px;
 }
 
 /* guestbook */
