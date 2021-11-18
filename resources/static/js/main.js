@@ -41,7 +41,7 @@ document.addEventListener('scroll', ()=> {
 
 // Handle click on the "arrow up" button
 arrowUp.addEventListener('click', ()=> {
-  scrollIntoView('.section');
+  scrollIntoView('.skipnavi'); 
 });
 
 function scrollIntoView(selector) {

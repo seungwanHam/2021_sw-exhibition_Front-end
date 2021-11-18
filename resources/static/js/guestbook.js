@@ -1,3 +1,23 @@
+// 시간 구하기
+function time() {
+ 
+  // 연, 월, 일
+  let today1 = new Date();
+
+  let year = today1.getFullYear();
+  let month = ('0' + (today1.getMonth() + 1)).slice(-2);
+  let day = ('0' + today1.getDate()).slice(-2);
+  
+  // 시, 분, 초
+  let today2 = new Date();   
+
+  let hours = ('0' + today2.getHours()).slice(-2); 
+  let minutes = ('0' + today2.getMinutes()).slice(-2);
+  let seconds = ('0' + today2.getSeconds()).slice(-2); 
+  
+  return year + '-' + month  + '-' + day + ' ' +hours + ':' + minutes  + ':' + seconds;
+}
+
 const text_wrapper = document.querySelector('.text-wrapper');
 const input_writer = document.querySelector('#writer');
 const input_text = document.querySelector('#content');
@@ -26,10 +46,30 @@ function createItem(writer, text) {
   const itemBox = document.createElement('div');
   itemBox.setAttribute('class', 'text');
 
-  const item = document.createElement('span');
-  item.innerText = writer + "\n\n" + text;
+  const itemBox_inner1 = document.createElement('div');
+  itemBox_inner1.setAttribute('class', 'text__writer');
 
-  itemBox.appendChild(item);
+  const item_1 = document.createElement('span');
+  item_1.innerText = writer;
+
+  const itemBox_inner2 = document.createElement('div');
+  itemBox_inner2.setAttribute('class', 'text__content');
+
+  const item_2 = document.createElement('span');
+  item_2.innerText = text;
+
+  const itemBox_inner3 = document.createElement('div');
+  itemBox_inner3.setAttribute('class', 'now_time');
+
+  const item_3 = document.createElement('span');
+  item_3.innerText = time();
+
+  itemBox.appendChild(itemBox_inner1);
+  itemBox_inner1.appendChild(item_1);
+  itemBox.appendChild(itemBox_inner2);
+  itemBox_inner2.appendChild(item_2);
+  itemBox.appendChild(itemBox_inner3);
+  itemBox_inner3.appendChild(item_3);
 
   return itemBox;
 }
@@ -37,7 +77,6 @@ function createItem(writer, text) {
 input_btn.addEventListener('click', () => {
   onAdd();
 });
-
 
 // enter 키로 입력을 해놓으면 줄바꿈이 안되기 때문에 해당 코드 삭제 처리
 // input_text.addEventListener('keypress', (event) => {

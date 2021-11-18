@@ -1,3 +1,32 @@
+/*
+    웹 접근성을 위한 skipnavi
+    https://nuli.navercorp.com/community/article/1132804 
+*/
+.skipnavi {
+  position: absolute;
+  left: 0;
+  top: -50;
+  text-indent: -9999px;
+  font-size: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.skipnavi > li > a:focus,
+.skipnavi > li > a:active {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  text-indent: 0;
+  font-size: 12px;
+  font-weight: bold;
+  background: #f2f2f2;
+}
+
 /* Global */
 :root {
   /* Color */
@@ -170,7 +199,6 @@ textarea {
   /* background-color: lightgray; */
   align-items: center;
   color: var(--color-white);
-  padding-right: 30px;
   transition: var(--animation-duration) ease-in-out;
   z-index: 1;
 }
@@ -577,6 +605,34 @@ textarea {
   box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
 }
 
+.text .text__writer {
+  font-size: 14px;
+}
+
+.text .text__content {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.text .now_time {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 12px;
+}
+
+.text .text__writer:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  background-color: var(--color-dark-white);
+}
+
 /* Arrow up */
 .arrow-up {
   position: fixed;
@@ -623,7 +679,7 @@ textarea {
   }
 
   #navbar.navbar--dark {
-    padding: 5px;
+    padding: 0px;
   }
 
   .navbar__logo {
@@ -684,11 +740,9 @@ textarea {
   }
 
   /* guestbook */
-
 }
 
 /* ------------------------------------------------------------------- */
-
 
 /* 안드로이드, 아이폰 (일반폰) */
 @media all and (max-width: 800px) {
@@ -708,7 +762,7 @@ textarea {
   /* Navbar */
   .navbar__toggle-btn {
     display: block;
-    top: 15px;
+    top: 18px;
     right: 26px;
     font-size: 25px;
     color: white;
@@ -721,7 +775,7 @@ textarea {
   }
 
   #navbar.navbar--dark {
-    padding: 5px;
+    padding: 0px;
   }
 
   .navbar__logo {
