@@ -241,6 +241,14 @@ textarea {
 }
 
 /* index.html */
+#main ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  left: 0;
+  top: 0;
+}
 .main_pc {
   position: relative;
   width: 100vw;
@@ -273,7 +281,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .main_pc .main_menu li > a {
   display: -webkit-flex;
@@ -281,8 +289,8 @@ textarea {
   -webkit-align-items: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
