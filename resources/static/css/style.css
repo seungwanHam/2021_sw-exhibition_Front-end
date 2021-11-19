@@ -509,12 +509,45 @@ li {
 .project__info {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  border: 2px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+}
+
+.project__name {
+  text-align: left;
+}
+
+.division__line {
+  position: absolute;
+  left: 50%;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: var(--size-border-radius);
+}
+
+.student__info {
+  text-align: left;
+}
+
+.student__info h4:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 80%;
+  height: 2px;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  background-color: var(--color-light-white);
 }
 
 .project__detail {
-  /* text-align: center; */
   text-align: left;
   margin-top: 40px;
+  padding: 20px;
+  border: 2px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
 }
 
 /* guestbook */
@@ -777,6 +810,28 @@ li {
     flex-direction: column;
   }
 
+  .division__line {
+    display: none;
+  }
+
+  .project__name {
+    text-align: center;
+  }
+  .student__info {
+    text-align: center;
+  }
+  .student__info h4:after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 30%;
+    height: 2px;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    background-color: var(--color-light-white);
+  }
+
   /* guestbook */
   .guest {
     width: 80%;
@@ -883,6 +938,28 @@ li {
   .project__info {
     display: flex;
     flex-direction: column;
+  }
+
+  .division__line {
+    display: none;
+  }
+
+  .project__name {
+    text-align: center;
+  }
+  .student__info {
+    text-align: center;
+  }
+  .student__info h4:after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    background-color: var(--color-light-white);
   }
 
   /* guestbook */
