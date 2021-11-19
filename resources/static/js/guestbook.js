@@ -15,7 +15,7 @@ function time() {
   let minutes = ('0' + today2.getMinutes()).slice(-2);
   let seconds = ('0' + today2.getSeconds()).slice(-2); 
   
-  return year + '-' + month  + '-' + day + ' ' +hours + ':' + minutes  + ':' + seconds;
+  return year + '-' + month  + '-' + day + ' ' + hours + ':' + minutes  + ':' + seconds;
 }
 
 const text_wrapper = document.querySelector('.text-wrapper');

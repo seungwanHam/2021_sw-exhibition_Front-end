@@ -69,7 +69,8 @@
 
 body {
   /* background-color: lightskyblue; */
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Jua", sans-serif;
   margin: 0;
   cursor: default;
   background-color: #ced3df;
@@ -371,7 +372,10 @@ li {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-light-white);
+  /* background-color: var(--color-light-white); */
+  background: linear-gradient(to bottom, #A0B8C5 146px, #EEF2F3 546px);
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
 }
 
 .project.invisible {
@@ -450,7 +454,14 @@ li {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-light-white);
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  background: linear-gradient(to bottom, #A0B8C5 146px, #EEF2F3 546px);
+}
+
+.member__img {
+  position: absolute;
+  top: 15px;
 }
 
 .member__description {
@@ -466,6 +477,11 @@ li {
   opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
+}
+
+.member__desc {
+  position: absolute;
+  bottom: 25px;
 }
 
 .member:hover .member__description {
@@ -497,6 +513,7 @@ li {
 
 .project__detail {
   /* text-align: center; */
+  text-align: left;
   margin-top: 40px;
 }
 
@@ -601,7 +618,7 @@ li {
   /* align-items: center;
   justify-content: center; */
   width: 250px;
-  height: 200px;
+  /* height: 200px; */
   padding: 10px;
   margin-top: 40px;
   margin-right: 10px;
@@ -614,17 +631,21 @@ li {
 }
 
 .text .text__writer {
+  word-break: break-all;
   font-size: 14px;
 }
 
 .text .text__content {
+  word-break:break-all;
   margin-top: 10px;
+  margin-bottom: 20px;
   font-size: 12px;
 }
 
 .text .now_time {
   position: absolute;
-  right: 5px;
+  text-align: right;
+  right: 10px;
   bottom: 5px;
   font-size: 12px;
 }
@@ -731,7 +752,16 @@ li {
     height: calc(25%);
   }
 
+  /* member.html */
+  #team {
+    padding-top: 80px;
+  }
+
   /* project.html */
+  #work {
+    padding-top: 80px;
+  }
+
   .category__btn {
     margin: 4px 0;
     width: 100%;
@@ -739,7 +769,7 @@ li {
 
   /* project_description */
   #project__desc {
-    padding: 70px 30px 30px 30px;
+    padding: 80px 30px 30px 30px;
   }
 
   .project__info {
@@ -748,6 +778,9 @@ li {
   }
 
   /* guestbook */
+  .guest {
+    width: 80%;
+  }
 }
 
 /* ------------------------------------------------------------------- */
@@ -827,7 +860,16 @@ li {
     height: calc(25%);
   }
 
+  /* member.html */
+  #team {
+    padding-top: 80px;
+  }
+
   /* project.html */
+  #work {
+    padding-top: 80px;
+  }
+
   .category__btn {
     margin: 4px 0;
     width: 100%;
@@ -835,7 +877,7 @@ li {
 
   /* project_description */
   #project__desc {
-    padding: 70px 30px 30px 30px;
+    padding: 80px 30px 30px 30px;
   }
 
   .project__info {
@@ -845,6 +887,6 @@ li {
 
   /* guestbook */
   .guest {
-    width: 100%;
+    width: 80%;
   }
 }
