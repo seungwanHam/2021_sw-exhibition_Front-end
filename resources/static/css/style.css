@@ -650,6 +650,11 @@ li {
   }
 
   /* Navbar */
+  #wrap {
+    overflow: auto;
+    overflow: scroll;
+  }
+
   .navbar__toggle-btn {
     display: block;
     top: 20px;
@@ -781,6 +786,11 @@ li {
   }
 
   /* Navbar */
+  #wrap {
+    overflow: auto;
+    overflow: scroll;
+  }
+  
   .navbar__toggle-btn {
     display: block;
     top: 16px;
