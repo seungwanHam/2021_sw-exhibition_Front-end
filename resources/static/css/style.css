@@ -1,7 +1,4 @@
-/*
-    웹 접근성을 위한 skipnavi
-    https://nuli.navercorp.com/community/article/1132804 
-*/
+/* 웹 접근성을 위한 skipnavi */
 .skipnavi {
   position: absolute;
   left: 0;
@@ -68,8 +65,6 @@
 }
 
 body {
-  /* background-color: lightskyblue; */
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Jua", sans-serif;
   margin: 0;
   cursor: default;
@@ -141,57 +136,10 @@ textarea {
   margin: auto;
 }
 
-/* 첫 화면 */
-.first__page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-/* .main_pc {
-  display: none;
-} */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 /* Navbar */
 #wrap {
   overflow: auto;
   overflow: scroll;
-  /* transform: translateZ(0);
-  will-change: transform; */
 }
 
 #navbar {
@@ -284,7 +232,6 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
 }
 .main_pc .main_menu li > a {
   display: -webkit-flex;
@@ -292,8 +239,6 @@ li {
   -webkit-align-items: center;
   align-items: center;
   position: absolute;
-  /* top: 0;
-  left: 0; */
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
@@ -374,8 +319,6 @@ li {
   width: 280px;
   height: 250px;
   margin: 2px;
-  /* background-color: var(--color-light-white); */
-  /* background: linear-gradient(to bottom, #A0B8C5 146px, #EEF2F3 546px); */
   background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
@@ -389,10 +332,6 @@ li {
   max-width: 100%;
   max-height: 100%;
 }
-
-/* .project__title {
-  
-} */
 
 .project__description {
   position: absolute;
@@ -494,10 +433,6 @@ li {
   background-position: center;
 }
 
-/* .member:hover span {
-  color: yellow;
-} */
-
 /* project_description */
 
 #project__desc {
@@ -554,12 +489,8 @@ li {
 }
 
 /* guestbook */
-
-/* .guestbook {
-  background-color: #ced3df;
-} */
 .guest {
-  width: 40%;
+  width: 30%;
   margin-top: 130px;
   margin-left: auto;
   margin-right: auto;
@@ -632,7 +563,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   opacity: 1;
-  width: 85%;
+  width: 80%;
   margin: 30px auto;
 }
 
@@ -825,7 +756,7 @@ li {
 
   /* guestbook */
   .guest {
-    width: 80%;
+    width: 50%;
   }
 }
 
@@ -957,6 +888,6 @@ li {
   /* guestbook */
   .guest {
     margin-top: 100px;
-    width: 80%;
+    width: 75%;
   }
 }
