@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>2021 씨애랑 | Guestbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../static/images/caerang.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -14,12 +15,15 @@
   <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
   <script defer src="../static/js/guestbook.js"></script>
   <script defer src="../static/js/main.js"></script>
+  <title>2021 씨애랑 | Guestbook</title>
 
 <body>
   <ul class="skipnavi">
-    <li><a href=".guest">본문내용</a></li>
+    <li><a href="#">본문내용</a></li>
   </ul>
   <!-- Navbar -->
+  <!-- nav 가 아래로 밀려 guestbook 콘텐츠와 겹치는 현상 발생, 이를 해결하기 위해 #wrap 으로 감싸고 overflow: auto 로 해결, 
+    safari는 해결 overflow: scroll 해야함 -->
   <div id="wrap">
     <nav id="navbar">
       <div class="navbar__logo">

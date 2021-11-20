@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2021 씨애랑 | Project</title>
+    <link rel="icon" type="image/png" href="../static/images/caerang.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
     <script defer src="../static/js/main.js"></script>
+    <title>2021 씨애랑 | Project</title>
 </head>
 
 <body>
@@ -181,7 +182,6 @@
 </body>
 
 <script>
-    // Projects
     const workBtnContainer = document.querySelector('.work__categories');
     const projectContainer = document.querySelector('.work__projects');
     const projects = document.querySelectorAll('.project');
@@ -190,7 +190,6 @@
         if (filter == null) {
             return;
         }
-        // Remove selection from the previous item and select the new one
         const active = document.querySelector('.category__btn.selected');
         active.classList.remove('selected');
         const target =

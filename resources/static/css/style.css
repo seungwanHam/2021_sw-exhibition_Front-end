@@ -189,8 +189,9 @@ textarea {
 /* Navbar */
 #wrap {
   overflow: auto;
-  /* transform: translateZ(0); */
-  /* will-change: transform; */
+  overflow: scroll;
+  /* transform: translateZ(0);
+  will-change: transform; */
 }
 
 #navbar {
@@ -594,7 +595,7 @@ li {
   height: 32px;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   padding: 16px;
   margin: 10px;
   text-align: center;
@@ -669,7 +670,7 @@ li {
   text-align: right;
   right: 10px;
   bottom: 5px;
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .text .text__writer:after {
@@ -717,7 +718,7 @@ li {
   /* Navbar */
   .navbar__toggle-btn {
     display: block;
-    top: 22px;
+    top: 20px;
     right: 26px;
     font-size: 30px;
     color: white;
@@ -848,7 +849,7 @@ li {
   /* Navbar */
   .navbar__toggle-btn {
     display: block;
-    top: 18px;
+    top: 16px;
     right: 26px;
     font-size: 25px;
     color: white;
@@ -955,6 +956,7 @@ li {
 
   /* guestbook */
   .guest {
+    margin-top: 100px;
     width: 80%;
   }
 }
