@@ -169,9 +169,14 @@ textarea {
 }
 
 .navbar__logo {
-  padding-left: 50px;
+  display: flex;
+  padding-left: 25px;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+}
+.navbar__logo img {
+  padding-right: 10px;
+  width: 50px;
 }
 
 .navbar__menu__item {
@@ -385,7 +390,7 @@ li {
 }
 
 .team__description {
-  border: 2px solid rgb(238, 081, 000);;
+  border: 2px solid rgb(238, 081, 000);
   padding: 20px;
   margin: 30px;
 }
@@ -683,7 +688,7 @@ li {
 
   .navbar__toggle-btn {
     display: block;
-    top: 20px;
+    top: 24px;
     right: 26px;
     font-size: 30px;
     color: white;
@@ -702,8 +707,17 @@ li {
   }
 
   .navbar__logo {
-    margin: 20px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 25px;
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+  }
+
+  .navbar__logo img {
+    padding-right: 10px;
+    width: 50px;
   }
 
   .navbar__menu {
@@ -819,7 +833,7 @@ li {
 
   .navbar__toggle-btn {
     display: block;
-    top: 16px;
+    top: 25px;
     right: 26px;
     font-size: 25px;
     color: white;
@@ -838,8 +852,21 @@ li {
   }
 
   .navbar__logo {
-    margin: 20px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 25px;
+    font-size: 22px;
+    font-weight: var(--weight-semi-bold);
+  }
+
+  .navbar__logo img {
+    padding-right: 10px;
+    width: 50px;
+  }
+
+  .navbar__logo a {
+    padding-top: 5px;
   }
 
   .navbar__menu {
