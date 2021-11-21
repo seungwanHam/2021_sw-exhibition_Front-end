@@ -684,6 +684,7 @@ li {
   /* Navbar */
   #wrap {
     overflow: auto;
+    overflow: scroll;
   }
 
   .navbar__toggle-btn {
@@ -829,6 +830,7 @@ li {
   /* Navbar */
   #wrap {
     overflow: auto;
+    overflow: scroll;
   }
 
   .navbar__toggle-btn {
