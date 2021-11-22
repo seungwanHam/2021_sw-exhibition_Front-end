@@ -446,7 +446,7 @@ li {
 .member:hover .member__description {
   opacity: 0.78;
   transform: translateY(0px);
-  background-image: url("/static/images/github.png");
+  background-image: url("../images/github.png");
   background-position: center;
   background-color: rgb(238, 081, 000);
 }
