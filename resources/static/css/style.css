@@ -473,6 +473,7 @@ li {
 
 .project__name {
   text-align: left;
+  word-wrap: break-word;
   color: var(--color-white);
 }
 
@@ -514,12 +515,12 @@ li {
 }
 
 .project__detail img {
-    display: block;
-    margin: 0 auto;
-    width: 600px;
-    height: auto;
-    max-width: 950px;
-    max-height: 500px;
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  max-width: 950px;
+  max-height: 500px;
 }
 
 .project__detail a {
@@ -686,6 +687,41 @@ li {
   pointer-events: auto;
 }
 
+/* Contact */
+#contact {
+  background-color: transparent;
+}
+
+.contact__container {
+  display: flex;
+  margin: 0 auto;
+  width: 30%;
+  justify-content: center;
+}
+
+.president {
+  margin-right: 20px;
+}
+
+.vice-president {
+  margin-left: 20px;
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}
+
 /* ------------------------------------------------------------------- */
 
 /* 갤럭시 탭, 아이패드등 (태블릿) */
@@ -818,9 +854,9 @@ li {
     background-color: var(--color-light-white);
   }
 
-    .project__detail img {
-        max-width: 600px;
-    }
+  .project__detail img {
+    max-width: 600px;
+  }
 
   /* guestbook */
   .guest {
@@ -972,9 +1008,9 @@ li {
     background-color: var(--color-light-white);
   }
 
-    .project__detail img {
-        max-width: 270px;
-    }
+  .project__detail img {
+    max-width: 270px;
+  }
 
   /* guestbook */
   .guest {
@@ -982,5 +1018,3 @@ li {
     width: 75%;
   }
 }
-
-
