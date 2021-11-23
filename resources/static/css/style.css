@@ -190,7 +190,7 @@ textarea {
 
 .navbar__menu__item:hover {
   /*border-color: #313130;*/
-  background-color: rgb(238, 081, 000);
+  background-color: #000;
 }
 
 .navbar__toggle-btn {
@@ -512,6 +512,15 @@ li {
   color: var(--color-white);
 }
 
+.project__detail img {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  max-width: 950px;
+  max-height: 500px;
+}
+
 /* guestbook */
 .guest {
   width: 30%;
@@ -804,6 +813,10 @@ li {
     background-color: var(--color-light-white);
   }
 
+  .project__detail img {
+    max-width: 600px;
+  }
+
   /* guestbook */
   .guest {
     width: 50%;
@@ -952,6 +965,10 @@ li {
     transform: translateX(-50%);
     margin-top: 8px;
     background-color: var(--color-light-white);
+  }
+
+  .project__detail img {
+    max-width: 270px;
   }
 
   /* guestbook */
