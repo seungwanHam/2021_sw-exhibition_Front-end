@@ -145,12 +145,10 @@ textarea {
 }
 
 #navbar {
-  /*position: absolute;*/
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%); */
   background-color: transparent;
   background-color: #000;
   align-items: center;
@@ -160,9 +158,12 @@ textarea {
 }
 
 #navbar.navbar--dark {
-  /* background-color: lightslategrey; */
   background-color: rgb(238, 081, 000);
   padding: 8px;
+}
+
+#navbar.navbar--dark:hover {
+  background-color: #000;
 }
 
 .navbar__menu {
@@ -191,7 +192,7 @@ textarea {
 
 .navbar__menu__item:hover {
   /*border-color: #313130;*/
-  background-color: #000;
+  background-color: rgb(238, 081, 000);
 }
 
 .navbar__toggle-btn {
