@@ -145,6 +145,7 @@ textarea {
 }
 
 #navbar {
+  /*position: absolute;*/
   position: fixed;
   width: 100%;
   display: flex;
@@ -446,7 +447,7 @@ li {
 .member:hover .member__description {
   opacity: 0.78;
   transform: translateY(0px);
-  background-image: url("../images/github.png");
+  background-image: url("/static/images/github.png");
   background-position: center;
   background-color: rgb(238, 081, 000);
 }
@@ -513,12 +514,12 @@ li {
 }
 
 .project__detail img {
-  display: block;
-  margin: 0 auto;
-  width: 600px;
-  height: auto;
-  max-width: 950px;
-  max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    max-width: 950px;
+    max-height: 500px;
 }
 
 .project__detail a {
@@ -817,9 +818,9 @@ li {
     background-color: var(--color-light-white);
   }
 
-  .project__detail img {
-    max-width: 600px;
-  }
+    .project__detail img {
+        max-width: 600px;
+    }
 
   /* guestbook */
   .guest {
@@ -859,7 +860,6 @@ li {
   }
 
   #navbar {
-    /* display: none; */
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-black);
@@ -972,9 +972,9 @@ li {
     background-color: var(--color-light-white);
   }
 
-  .project__detail img {
-    max-width: 270px;
-  }
+    .project__detail img {
+        max-width: 270px;
+    }
 
   /* guestbook */
   .guest {
@@ -982,3 +982,5 @@ li {
     width: 75%;
   }
 }
+
+
